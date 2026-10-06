@@ -1,0 +1,8 @@
+{
+  "demo": {
+    "projectName": "GE_CORPORTE_INTEGRATION",
+    "oicBaseUrlEnv": "OIC_BASE_URL",
+    "tokenUrlEnv": "OIC_TOKEN_URL",
+    "scopeEnv": "OIC_SCOPE"
+  }
+}
