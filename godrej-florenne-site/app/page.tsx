@@ -4,9 +4,9 @@ import { FormEvent, useEffect, useState } from 'react';
 const PHONE='919620581931', DISPLAY_PHONE='+91 96205 81931';
 const IMG='https://www.godrejproperties.com/landing-page/bangalore/residential/godrej-florenne/Images/';
 const plans=[['4 BED OPTIMA','4 BHK'],['4 BHK PREMIA','4 BHK'],['4 BED LUXE','4 BHK'],['5 BHK LUXE','5 BHK']] as const;
-const gallery=[['pergola.webp','La Pergola des Jardins'],['courtyard.webp','La Grande Cour'],['2nd_section.webp','Chateau-inspired row houses'],['3rd_section.webp','Landscaped outdoor spaces'],['map_new_desk.webp','Prime Whitefield location']] as const;
-const storySlides=[['3rd_section.webp','Landscaped family spaces'],['pergola.webp','La Pergola des Jardins'],['courtyard.webp','La Grande Cour']] as const;
-const highlightSlides=[['2nd_section.webp','French-inspired architecture'],['map_new_desk.webp','Prime Whitefield location']] as const;
+const gallery=[['https://www.trulia.com/pictures/thumbs_5/zillowstatic/fp/f5305719962726f10415db34993b56df-full.jpg','French-inspired townhouse courtyard'],['https://assets.ad-magazin.de/photos/639333fb6e5450a497c1a107/master/w_1600%2Cc_limit/191-BLVD_Saint_Germain-reshoot-012.jpg','Classic Parisian garden residence'],['https://photos.harstatic.com/298357858/hr/img-1.jpeg','French-style luxury residence'],['https://www.tradition-immobilier.com/rs/AABuYHVuQ3F2dW9GXpBIl6B4rRhYUCNQAzNGfX0rMyMzTwA0NDZKMzc0M9VBWM1CWVjXyS_IyCvSLVnJzMpCzc3MyGMoLFg/5601219-0.jpg','Parisian courtyard lifestyle'],['https://www.swajdesign.com/web/image/842-24f18c7a/eca6a3ba-1fb5-46b7-811a-ce165cfe7495.webp','Luxury courtyard architecture']] as const;
+const storySlides=[['https://www.tradition-immobilier.com/rs/AABuYHVuQ3F2dW9GXpBIl6B4rRhYUCNQAzNGfX0rMyMzTwA0NDZKMzc0M9VBWM1CWVjXyS_IyCvSLVnJzMpCzc3MyGMoLFg/5601219-0.jpg','Parisian garden lifestyle'],['https://www.swajdesign.com/web/image/842-24f18c7a/eca6a3ba-1fb5-46b7-811a-ce165cfe7495.webp','Luxury courtyard architecture'],['https://assets.ad-magazin.de/photos/639333fb6e5450a497c1a107/master/w_1600%2Cc_limit/191-BLVD_Saint_Germain-reshoot-012.jpg','Classic French residence']] as const;
+const highlightSlides=[['https://photos.harstatic.com/298357858/hr/img-1.jpeg','French-style architecture'],['https://www.trulia.com/pictures/thumbs_5/zillowstatic/fp/f5305719962726f10415db34993b56df-full.jpg','Elegant townhouse setting']] as const;
 
 export default function Home(){
  const [selected,setSelected]=useState('Not decided');
