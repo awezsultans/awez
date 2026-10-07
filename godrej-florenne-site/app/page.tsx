@@ -4,8 +4,8 @@ import { FormEvent, useEffect, useState } from 'react';
 const PHONE='919620581931', DISPLAY_PHONE='+91 96205 81931';
 const IMG='https://www.godrejproperties.com/landing-page/bangalore/residential/godrej-florenne/Images/';
 const plans=[['4 BED OPTIMA','4 BHK'],['4 BHK PREMIA','4 BHK'],['4 BED LUXE','4 BHK'],['5 BHK LUXE','5 BHK']] as const;
-const gallery=[['2nd_section.webp','Chateau-inspired row houses'],['3rd_section.webp','Landscaped outdoor spaces'],['pergola.webp','La Pergola des Jardins'],['courtyard.webp','La Grande Cour'],['map_new_desk.webp','Prime Whitefield location']] as const;
-const storyImages=[['2nd_section.webp','Chateau-inspired architecture'],['pergola.webp','La Pergola des Jardins'],['courtyard.webp','La Grande Cour'],['3rd_section.webp','Landscaped outdoor living'],['map_new_desk.webp','The Florenne setting']] as const;
+const gallery=[['2nd_section.webp','Chateau-inspired row houses'],['pergola.webp','La Pergola des Jardins'],['3rd_section.webp','Landscaped outdoor spaces'],['courtyard.webp','La Grande Cour'],['map_new_desk.webp','Prime Whitefield location']] as const;
+const storyImages=[['2nd_section.webp','Chateau-inspired architecture'],['courtyard.webp','La Grande Cour'],['pergola.webp','La Pergola des Jardins'],['3rd_section.webp','Landscaped outdoor living'],['map_new_desk.webp','The Florenne setting']] as const;
 
 export default function Home(){
  const [selected,setSelected]=useState('Not decided'); const [lightbox,setLightbox]=useState<string|null>(null); const [sent,setSent]=useState(false); const [slide,setSlide]=useState(0); const [storySlide,setStorySlide]=useState(0);
