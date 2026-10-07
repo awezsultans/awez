@@ -16,3 +16,5 @@
 @media(max-width:480px){.hero h1{font-size:48px}.hero-enquiry{padding:24px}.highlight-grid{grid-template-columns:1fr}}
 
 .slide{transition:none}.slide.active img{animation:florenneZoom 3s ease-in-out forwards}.slide img{transform:scale(1.01)}@keyframes florenneZoom{from{transform:scale(1.01)}to{transform:scale(1.10)}}.slide-track{transition:transform .9s cubic-bezier(.22,.61,.36,1)}
+
+.story-slider{position:relative;overflow:hidden}.story-track{display:flex;width:100%;height:100%;transition:transform .9s cubic-bezier(.22,.61,.36,1)}.story-slide{flex:0 0 100%;height:100%;overflow:hidden}.story-slide img{width:100%;height:100%;object-fit:cover;display:block;animation:storyZoom 4s ease-in-out forwards}.story-dots{position:absolute;z-index:4;bottom:24px;left:50%;transform:translateX(-50%);display:flex;gap:7px}.story-dots button{width:28px;height:3px;border:0;background:#ffffff66;padding:0;cursor:pointer}.story-dots button.active{background:#fff}@keyframes storyZoom{from{transform:scale(1.01)}to{transform:scale(1.08)}}
