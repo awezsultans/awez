@@ -4,7 +4,7 @@ import { FormEvent, useEffect, useState } from 'react';
 const PHONE='919620581931', DISPLAY_PHONE='+91 96205 81931';
 const IMG='https://www.godrejproperties.com/landing-page/bangalore/residential/godrej-florenne/Images/';
 const plans=[['4 BED OPTIMA','4 BHK'],['4 BHK PREMIA','4 BHK'],['4 BED LUXE','4 BHK'],['5 BHK LUXE','5 BHK']] as const;
-const gallery=[['2nd_section.webp','Chateau-inspired row houses'],['pergola.webp','La Pergola des Jardins'],['3rd_section.webp','Landscaped outdoor spaces'],['courtyard.webp','La Grande Cour'],['map_new_desk.webp','Prime Whitefield location']] as const;
+const gallery=[['https://www.godrejsoukyaroad.com/assets/gallery/pool-godrej-soukya-road.webp','Swimming pool & outdoor leisure'],['https://www.godrejsoukyaroad.com/assets/gallery/garden-godrej-soukya-road.webp','Landscaped garden & natural trail'],['https://www.godrejsoukyaroad.com/assets/gallery/clubhouse-godrej-soukya-road.webp','Clubhouse & leisure space'],['https://www.godrejsoukyaroad.com/assets/gallery/exterior-godrej-soukya-road.webp','Row-house exterior'],['https://www.godrejsoukyaroad.com/assets/gallery/aerial-godrej-soukya-road.webp','Aerial community view']] as const;
 const storyImages=[['2nd_section.webp','Chateau-inspired architecture'],['courtyard.webp','La Grande Cour'],['pergola.webp','La Pergola des Jardins'],['3rd_section.webp','Landscaped outdoor living'],['map_new_desk.webp','The Florenne setting']] as const;
 
 export default function Home(){
