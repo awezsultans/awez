@@ -1,7 +1,7 @@
 'use client';
 import { FormEvent, useState } from 'react';
 const PHONE='919620581931';
-const MASTER_PLAN='/master-plan.svg';
+const MASTER_PLAN='https://raw.githubusercontent.com/awezsultans/ge-property-hub/main/public/images/projects/godrej-florenne/master-plan.webp';
 const GALLERY={
  exterior:'https://lavivant.in/img/villa/4_enlarge.jpg',
  aerial:'https://www.godrejsoukyaroad.com/assets/gallery/aerial-godrej-soukya-road.webp',
