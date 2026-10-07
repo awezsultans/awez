@@ -11,7 +11,7 @@ export default function Home(){
  const [lightbox,setLightbox]=useState<string|null>(null);
  const [sent,setSent]=useState(false);
  const [slide,setSlide]=useState(0);
- useEffect(()=>{const id=window.setInterval(()=>setSlide(s=>(s+1)%gallery.length),4500);return()=>window.clearInterval(id)},[]);
+ useEffect(()=>{const id=window.setInterval(()=>setSlide(s=>(s+1)%gallery.length),3000);return()=>window.clearInterval(id)},[]);
  const choose=(type:string)=>{setSelected(type);document.getElementById('enquiry')?.scrollIntoView({behavior:'smooth'})};
  const submit=(e:FormEvent<HTMLFormElement>)=>{e.preventDefault();const f=new FormData(e.currentTarget);const msg=['Godrej Florenne enquiry','Name: '+f.get('name'),'Mobile: '+f.get('phone'),'Email: '+f.get('email'),'Configuration: '+f.get('configuration')].join('\n');window.open('https://wa.me/'+PHONE+'?text='+encodeURIComponent(msg),'_blank','noopener,noreferrer');setSent(true)};
  return <main>
