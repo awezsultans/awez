@@ -2,7 +2,7 @@
 import { FormEvent, useState } from 'react';
 const PHONE='919620581931';
 const GALLERY={
- exterior:'https://www.godrejsoukyaroad.com/assets/gallery/exterior-godrej-soukya-road.webp',
+ exterior:'https://lavivant.in/img/villa/4_enlarge.jpg',
  aerial:'https://www.godrejsoukyaroad.com/assets/gallery/aerial-godrej-soukya-road.webp',
  garden:'https://www.godrejsoukyaroad.com/assets/gallery/garden-godrej-soukya-road.webp',
  clubhouse:'https://www.godrejsoukyaroad.com/assets/gallery/clubhouse-godrej-soukya-road.webp',
