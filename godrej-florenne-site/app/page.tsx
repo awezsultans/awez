@@ -8,11 +8,11 @@ const GALLERY={
  aerial:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225552-3516.webp',
  garden:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225579-6595.webp',
  clubhouse:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225567-4979.webp',
- residences:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225552-3516.webp',
+ residences:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225561-4704.webp',
  courtyard:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225597-9095.webp',
  avenue:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225561-4704.webp',
- homes:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225552-3516.webp',
- landscape:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225579-6595.webp',
+ homes:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225567-4979.webp',
+ landscape:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225590-9458.webp',
  lifestyle:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225561-4704.webp'
 };
 const galleryImages=[
