@@ -32,7 +32,7 @@ export default function Home(){
  const [selected,setSelected]=useState('4 BHK'); const [sent,setSent]=useState(false); const [galleryIndex,setGalleryIndex]=useState(0);
  const prevGallery=()=>setGalleryIndex(i=>(i-1+galleryImages.length)%galleryImages.length);
  const nextGallery=()=>setGalleryIndex(i=>(i+1)%galleryImages.length);
- useEffect(()=>{const timer=window.setInterval(()=>setGalleryIndex(i=>(i+1)%galleryImages.length),5000);return()=>window.clearInterval(timer)},[]);
+ useEffect(()=>{const timer=window.setInterval(()=>setGalleryIndex(i=>(i+1)%galleryImages.length),4000);return()=>window.clearInterval(timer)},[]);
  const submit=(e:FormEvent<HTMLFormElement>)=>{e.preventDefault();const f=new FormData(e.currentTarget);const msg=['Godrej Florenne enquiry','Name: '+f.get('name'),'Mobile: '+f.get('phone'),'Email: '+f.get('email'),'Configuration: '+f.get('configuration')].join('\n');window.open('https://wa.me/'+PHONE+'?text='+encodeURIComponent(msg),'_blank');setSent(true)};
  return <main>
  <header className="site-nav">
