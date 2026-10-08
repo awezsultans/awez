@@ -1,7 +1,7 @@
 'use client';
 import { FormEvent, useState } from 'react';
 const PHONE='919620581931';
-const MASTER_PLAN='https://raw.githubusercontent.com/awezsultans/ge-property-hub/main/public/images/projects/godrej-florenne/master-plan.webp';
+const MASTER_PLAN=FLORENNE_IMAGES+'mlp01.webp';
 const FLORENNE_IMAGES='https://www.godrejproperties.com/landing-page/bangalore/residential/godrej-florenne/Images/';
 const GALLERY={
  exterior:FLORENNE_IMAGES+'2nd_section.webp',
