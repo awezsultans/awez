@@ -2,13 +2,31 @@
 import { FormEvent, useState } from 'react';
 const PHONE='919620581931';
 const MASTER_PLAN='https://raw.githubusercontent.com/awezsultans/ge-property-hub/main/public/images/projects/godrej-florenne/master-plan.webp';
+const FLORENNE_IMAGES='https://www.godrejproperties.com/landing-page/bangalore/residential/godrej-florenne/Images/';
 const GALLERY={
- exterior:'https://lavivant.in/img/villa/4_enlarge.jpg',
- aerial:'https://www.godrejsoukyaroad.com/assets/gallery/aerial-godrej-soukya-road.webp',
- garden:'https://www.godrejsoukyaroad.com/assets/gallery/garden-godrej-soukya-road.webp',
- clubhouse:'https://www.godrejsoukyaroad.com/assets/gallery/clubhouse-godrej-soukya-road.webp',
- pool:'https://www.godrejsoukyaroad.com/assets/gallery/pool-godrej-soukya-road.webp'
+ exterior:FLORENNE_IMAGES+'2nd_section.webp',
+ aerial:FLORENNE_IMAGES+'3rd_section.webp',
+ garden:FLORENNE_IMAGES+'pergola.webp',
+ clubhouse:FLORENNE_IMAGES+'courtyard.webp',
+ pool:FLORENNE_IMAGES+'right_1.webp',
+ facade:FLORENNE_IMAGES+'left_1.webp',
+ mlp01:FLORENNE_IMAGES+'mlp01.webp',
+ mlp02:FLORENNE_IMAGES+'mlp02.webp',
+ mlp03:FLORENNE_IMAGES+'mlp03.webp',
+ mlp04:FLORENNE_IMAGES+'mlp04.webp'
 };
+const galleryImages=[
+ [GALLERY.exterior,'01 · The Residences','Godrej Florenne French-inspired row houses'],
+ [GALLERY.aerial,'02 · The Grand Avenue','Godrej Florenne landscaped central avenue'],
+ [GALLERY.garden,'03 · La Pergola','Godrej Florenne pergola and garden landscape'],
+ [GALLERY.clubhouse,'04 · La Grande Cour','Godrej Florenne courtyard landscape'],
+ [GALLERY.pool,'05 · Signature Architecture','Godrej Florenne architectural streetscape'],
+ [GALLERY.facade,'06 · French Facades','Godrej Florenne row-house facade'],
+ [GALLERY.mlp01,'07 · Master Landscape','Godrej Florenne master landscape view'],
+ [GALLERY.mlp02,'08 · Community Spaces','Godrej Florenne community landscape'],
+ [GALLERY.mlp03,'09 · Outdoor Living','Godrej Florenne outdoor amenity space'],
+ [GALLERY.mlp04,'10 · Garden Walks','Godrej Florenne landscaped garden walk']
+] as const;
 const homes=[['4 BED OPTIMA','4 BHK'],['4 BHK PREMIA','4 BHK'],['4 BED LUXE','4 BHK'],['5 BHK LUXE','5 BHK']] as const;
 export default function Home(){
  const [selected,setSelected]=useState('4 BHK'); const [sent,setSent]=useState(false);
@@ -29,7 +47,7 @@ export default function Home(){
  <section id="story" className="editorial"><div className="editorial-label">C'EST MAGNIFIQUE</div><div className="editorial-copy"><h2>Every frame tells a story of grandeur.</h2><p>Inspired by French Renaissance architecture and traditional châteaux, Godrej Florenne brings a distinctive character to Whitefield.</p><p>Light, courtyards and outdoor spaces come together to create a private world that feels elegant, warm and distinctly yours.</p><a href="#enquiry" className="text-arrow">Discover Florenne ↗</a></div><div className="editorial-image"><img src={GALLERY.aerial} alt="Godrej Florenne courtyard"/><span>La Grande Cour</span></div></section>
  <section id="highlights" className="manifesto"><div className="manifesto-image"><img src={GALLERY.garden} alt="Godrej Florenne outdoor living"/></div><div className="manifesto-copy"><p className="kicker dark">UN SOUFFLE DE NATURE</p><h2>Every day deserves a little more outdoors.</h2><p>The outdoors becomes an extension of home — for morning walks, children's play, evenings with friends and quiet pauses beneath the sky.</p><div className="manifesto-points"><div><b>La Terrasse</b><span>Where every gathering feels like home.</span></div><div><b>La Pergola</b><span>A green horizon just outside your door.</span></div><div><b>La Grande Cour</b><span>Your world, beautifully centred.</span></div></div></div></section>
 
- <section id="gallery" className="florenne-slider" aria-label="Godrej Florenne project gallery"><div className="slider-heading"><p className="kicker dark">A GLIMPSE OF FLORENNE</p><h2>Scenes from<br/><i>beautiful living.</i></h2></div><div className="slider-track"><div className="slide"><img src={GALLERY.exterior} alt="Godrej Florenne residence architecture"/><span>01 · The Residences</span></div><div className="slide"><img src={GALLERY.aerial} alt="Godrej Florenne courtyard and streetscape"/><span>02 · The Grand Avenue</span></div><div className="slide"><img src={GALLERY.garden} alt="Godrej Florenne outdoor living landscape"/><span>03 · Outdoor Living</span></div><div className="slide"><img src={GALLERY.clubhouse} alt="Godrej Florenne community pavilion"/><span>04 · The Courtyard</span></div><div className="slide"><img src={GALLERY.pool} alt="Godrej Florenne evening community view"/><span>05 · Signature Architecture</span></div></div><div className="slider-dots" aria-hidden="true"><i/><i/><i/><i/><i/></div></section>
+ <section id="gallery" className="florenne-slider" aria-label="Godrej Florenne project gallery"><div className="slider-heading"><p className="kicker dark">A GLIMPSE OF FLORENNE</p><h2>Scenes from<br/><i>beautiful living.</i></h2></div><div className="slider-track">{galleryImages.map(([src,caption,alt])=><div className="slide" key={caption}><img src={src} alt={alt} loading="lazy"/><span>{caption}</span></div>)}</div><div className="slider-dots" aria-hidden="true">{galleryImages.map(([,caption])=><i key={caption}/>)}</div></section>
  <section className="numbers"><div><span>01</span><b>4 & 5 BHK</b><small>Signature row-house residences</small></div><div><span>02</span><b>Whitefield</b><small>Off Whitefield-Hoskote Road</small></div><div><span>03</span><b>₹5.40 Cr.*</b><small>Starting from</small></div><div><span>04</span><b>Sep 2031</b><small>Possession</small></div></section>
  <section id="residences" className="residences"><div className="section-heading"><p className="kicker dark">BONJOUR, BEAUTIFUL LIFE.</p><h2>Homes with room<br/>for your story.</h2><p>Explore the four signature residence types and request the detailed floor plan for the home that interests you.</p></div><div className="residence-list">{homes.map(([name,type],i)=><button key={name} className={'residence-row '+(selected===type?'active':'')} onClick={()=>setSelected(type)}><span className="residence-number">0{i+1}</span><span className="residence-main"><b>{name}</b><small>{type}</small></span><span className="residence-note">Detailed plan available on request.</span><span className="residence-arrow">↗</span></button>)}</div><div className="plan-visual"><div className="plan-image"><img src={MASTER_PLAN} alt="Godrej Florenne master plan supplied for the project" loading="lazy"/></div><div><span>MASTER PLAN · FLORENNE</span><b>{selected}</b><p>The supplied Godrej Florenne master plan is shown here as the project layout. Use the enquiry form to request the detailed unit floor plan and current availability.</p><a href="#enquiry">Get Floor Plan →</a></div></div></section>
  <section id="amenities" className="amenity-section"><div className="amenity-intro"><p className="kicker">A LITTLE MORE JOIE DE VIVRE</p><h2>More ways to unwind.<br/>More reasons to get together.</h2></div><div className="amenity-image"><img src={GALLERY.garden} alt="Godrej Florenne landscaped pergola"/></div><div className="amenity-grid">{[['01','Kids Play Area','Spaces for pure childhood joy.'],['02','Landscape Padel','A place for a quick game with family or friends.'],['03','View Amphitheatre','An open-air setting for performances and celebrations.'],['04','Gazebo','A quiet covered corner to pause outdoors.']].map(([n,t,c])=><article key={t}><span>{n}</span><h3>{t}</h3><p>{c}</p></article>)}</div></section>
