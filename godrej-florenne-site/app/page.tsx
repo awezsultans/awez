@@ -4,24 +4,28 @@ const PHONE='919620581931';
 const FLORENNE_IMAGES='/florenne/';
 const MASTER_PLAN='/master-plan.svg';
 const GALLERY={
- exterior:FLORENNE_IMAGES+'slide-01.webp',
- aerial:FLORENNE_IMAGES+'slide-02.webp',
- garden:FLORENNE_IMAGES+'slide-03.webp',
- clubhouse:FLORENNE_IMAGES+'slide-04.webp',
- mlp01:FLORENNE_IMAGES+'slide-05.webp',
- mlp02:FLORENNE_IMAGES+'slide-01.webp',
- mlp03:FLORENNE_IMAGES+'slide-02.webp',
- mlp04:FLORENNE_IMAGES+'slide-03.webp'
+ exterior:FLORENNE_IMAGES+'florenne-04.jpg',
+ aerial:FLORENNE_IMAGES+'florenne-03.jpg',
+ garden:FLORENNE_IMAGES+'florenne-08.jpg',
+ clubhouse:FLORENNE_IMAGES+'florenne-02.jpg',
+ residences:FLORENNE_IMAGES+'florenne-05.jpg',
+ courtyard:FLORENNE_IMAGES+'florenne-01.jpg',
+ avenue:FLORENNE_IMAGES+'florenne-10.jpg',
+ homes:FLORENNE_IMAGES+'florenne-06.jpg',
+ landscape:FLORENNE_IMAGES+'florenne-09.jpg',
+ lifestyle:FLORENNE_IMAGES+'florenne-07.jpg'
 };
 const galleryImages=[
- [GALLERY.exterior,'01 · The Residences','Godrej Florenne French-inspired row houses'],
- [GALLERY.aerial,'02 · The Grand Avenue','Godrej Florenne landscaped central avenue'],
- [GALLERY.garden,'03 · La Pergola','Godrej Florenne pergola and garden landscape'],
- [GALLERY.clubhouse,'04 · La Grande Cour','Godrej Florenne courtyard landscape'],
- [GALLERY.mlp01,'05 · Master Landscape','Godrej Florenne master landscape view'],
- [GALLERY.mlp02,'06 · Community Spaces','Godrej Florenne community landscape'],
- [GALLERY.mlp03,'07 · Outdoor Living','Godrej Florenne outdoor amenity space'],
- [GALLERY.mlp04,'08 · Garden Walks','Godrej Florenne landscaped garden walk']
+ [GALLERY.courtyard,'01 · Courtyard Gardens','Godrej Florenne landscaped courtyard and garden'],
+ [GALLERY.clubhouse,'02 · La Grande Cour','Godrej Florenne fountain and French-inspired arch'],
+ [GALLERY.aerial,'03 · The Grand Avenue','Godrej Florenne central landscaped courtyard'],
+ [GALLERY.exterior,'04 · French Residences','Godrej Florenne French-inspired residences'],
+ [GALLERY.residences,'05 · Boulevard Living','Godrej Florenne signature street-facing residences'],
+ [GALLERY.homes,'06 · Signature Homes','Godrej Florenne elegant row-house architecture'],
+ [GALLERY.lifestyle,'07 · Residential Avenue','Godrej Florenne luxury row-house community'],
+ [GALLERY.garden,'08 · La Pergola','Godrej Florenne outdoor garden pavilion'],
+ [GALLERY.landscape,'09 · Garden Walks','Godrej Florenne landscaped community spaces'],
+ [GALLERY.avenue,'10 · The Promenade','Godrej Florenne grand landscaped avenue']
 ] as const;
 const homes=[['4 BED OPTIMA','4 BHK'],['4 BHK PREMIA','4 BHK'],['4 BED LUXE','4 BHK'],['5 BHK LUXE','5 BHK']] as const;
 export default function Home(){
