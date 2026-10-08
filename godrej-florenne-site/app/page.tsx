@@ -4,16 +4,16 @@ const PHONE='919620581931';
 const FLORENNE_IMAGES='/florenne/';
 const MASTER_PLAN='/master-plan.svg';
 const GALLERY={
- exterior:FLORENNE_IMAGES+'florenne-04.jpg',
- aerial:FLORENNE_IMAGES+'florenne-03.jpg',
- garden:FLORENNE_IMAGES+'florenne-08.jpg',
- clubhouse:FLORENNE_IMAGES+'florenne-02.jpg',
- residences:FLORENNE_IMAGES+'florenne-05.jpg',
- courtyard:FLORENNE_IMAGES+'florenne-01.jpg',
- avenue:FLORENNE_IMAGES+'florenne-10.jpg',
- homes:FLORENNE_IMAGES+'florenne-06.jpg',
- landscape:FLORENNE_IMAGES+'florenne-09.jpg',
- lifestyle:FLORENNE_IMAGES+'florenne-07.jpg'
+ exterior:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225534-7486.webp',
+ aerial:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225552-3516.webp',
+ garden:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225579-6595.webp',
+ clubhouse:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225567-4979.webp',
+ residences:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225552-3516.webp',
+ courtyard:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225597-9095.webp',
+ avenue:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225561-4704.webp',
+ homes:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225552-3516.webp',
+ landscape:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225579-6595.webp',
+ lifestyle:'https://www.rathiglobalrealty.com/uploads/product/gal-1790225561-4704.webp'
 };
 const galleryImages=[
  [GALLERY.courtyard,'01 · Courtyard Gardens','Godrej Florenne landscaped courtyard and garden'],
