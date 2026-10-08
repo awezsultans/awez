@@ -1,17 +1,17 @@
 'use client';
 import { FormEvent, useState } from 'react';
 const PHONE='919620581931';
-const FLORENNE_IMAGES='https://www.godrejproperties.com/landing-page/bangalore/residential/godrej-florenne/Images/';
+const FLORENNE_IMAGES='/florenne/';
 const MASTER_PLAN='/master-plan.svg';
 const GALLERY={
- exterior:FLORENNE_IMAGES+'2nd_section.webp',
- aerial:FLORENNE_IMAGES+'3rd_section.webp',
- garden:FLORENNE_IMAGES+'pergola.webp',
- clubhouse:FLORENNE_IMAGES+'courtyard.webp',
- mlp01:FLORENNE_IMAGES+'mlp01.webp',
- mlp02:FLORENNE_IMAGES+'mlp02.webp',
- mlp03:FLORENNE_IMAGES+'mlp03.webp',
- mlp04:FLORENNE_IMAGES+'mlp04.webp'
+ exterior:FLORENNE_IMAGES+'slide-01.webp',
+ aerial:FLORENNE_IMAGES+'slide-02.webp',
+ garden:FLORENNE_IMAGES+'slide-03.webp',
+ clubhouse:FLORENNE_IMAGES+'slide-04.webp',
+ mlp01:FLORENNE_IMAGES+'slide-05.webp',
+ mlp02:FLORENNE_IMAGES+'slide-01.webp',
+ mlp03:FLORENNE_IMAGES+'slide-02.webp',
+ mlp04:FLORENNE_IMAGES+'slide-03.webp'
 };
 const galleryImages=[
  [GALLERY.exterior,'01 · The Residences','Godrej Florenne French-inspired row houses'],
