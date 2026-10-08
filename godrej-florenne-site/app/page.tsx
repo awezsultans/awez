@@ -8,8 +8,6 @@ const GALLERY={
  aerial:FLORENNE_IMAGES+'3rd_section.webp',
  garden:FLORENNE_IMAGES+'pergola.webp',
  clubhouse:FLORENNE_IMAGES+'courtyard.webp',
- pool:FLORENNE_IMAGES+'right_1.webp',
- facade:FLORENNE_IMAGES+'left_1.webp',
  mlp01:FLORENNE_IMAGES+'mlp01.webp',
  mlp02:FLORENNE_IMAGES+'mlp02.webp',
  mlp03:FLORENNE_IMAGES+'mlp03.webp',
@@ -20,12 +18,10 @@ const galleryImages=[
  [GALLERY.aerial,'02 · The Grand Avenue','Godrej Florenne landscaped central avenue'],
  [GALLERY.garden,'03 · La Pergola','Godrej Florenne pergola and garden landscape'],
  [GALLERY.clubhouse,'04 · La Grande Cour','Godrej Florenne courtyard landscape'],
- [GALLERY.pool,'05 · Signature Architecture','Godrej Florenne architectural streetscape'],
- [GALLERY.facade,'06 · French Facades','Godrej Florenne row-house facade'],
- [GALLERY.mlp01,'07 · Master Landscape','Godrej Florenne master landscape view'],
- [GALLERY.mlp02,'08 · Community Spaces','Godrej Florenne community landscape'],
- [GALLERY.mlp03,'09 · Outdoor Living','Godrej Florenne outdoor amenity space'],
- [GALLERY.mlp04,'10 · Garden Walks','Godrej Florenne landscaped garden walk']
+ [GALLERY.mlp01,'05 · Master Landscape','Godrej Florenne master landscape view'],
+ [GALLERY.mlp02,'06 · Community Spaces','Godrej Florenne community landscape'],
+ [GALLERY.mlp03,'07 · Outdoor Living','Godrej Florenne outdoor amenity space'],
+ [GALLERY.mlp04,'08 · Garden Walks','Godrej Florenne landscaped garden walk']
 ] as const;
 const homes=[['4 BED OPTIMA','4 BHK'],['4 BHK PREMIA','4 BHK'],['4 BED LUXE','4 BHK'],['5 BHK LUXE','5 BHK']] as const;
 export default function Home(){
