@@ -2,7 +2,7 @@
 import { FormEvent, useState } from 'react';
 const PHONE='919620581931';
 const FLORENNE_IMAGES='https://www.godrejproperties.com/landing-page/bangalore/residential/godrej-florenne/Images/';
-const MASTER_PLAN=FLORENNE_IMAGES+'mlp01.webp';
+const MASTER_PLAN='/master-plan.svg';
 const GALLERY={
  exterior:FLORENNE_IMAGES+'2nd_section.webp',
  aerial:FLORENNE_IMAGES+'3rd_section.webp',
