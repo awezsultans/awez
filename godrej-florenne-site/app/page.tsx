@@ -36,9 +36,8 @@ export default function Home(){
  const submit=(e:FormEvent<HTMLFormElement>)=>{e.preventDefault();const f=new FormData(e.currentTarget);const msg=['Godrej Florenne enquiry','Name: '+f.get('name'),'Mobile: '+f.get('phone'),'Email: '+f.get('email'),'Configuration: '+f.get('configuration')].join('\n');window.open('https://wa.me/'+PHONE+'?text='+encodeURIComponent(msg),'_blank');setSent(true)};
  return <main>
  <header className="site-nav">
- <a className="logo" href="#top" aria-label="Godrej Florenne home">
-  <span className="logo-mark" aria-hidden="true"><i/><b/></span>
-  <span className="logo-word">GODREJ</span><strong>FLORENNE</strong><small>OFF SOUKYA ROAD · WHITEFIELD, BENGALURU</small>
+ <a className="logo logo-reference" href="#top" aria-label="Godrej Florenne home">
+  <span className="godrej-wordmark">Godrej</span><span className="logo-divider" aria-hidden="true"></span><strong>FLORENNE</strong>
  </a>
  <nav aria-label="Primary navigation">
   <a href="#story">OVERVIEW</a><a href="#highlights">HIGHLIGHTS</a><a href="#amenities">AMENITIES</a><a href="#location">LOCATION</a><a href="#gallery">GALLERY</a><a href="#enquiry">CONTACT US</a>
