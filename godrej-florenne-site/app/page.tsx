@@ -46,7 +46,7 @@ export default function Home(){
  <a className="nav-cta" href="#enquiry">ENQUIRE NOW</a>
 </header>
  <section className="mobile-hero" aria-label="Godrej Florenne introduction">
-  <div className="mobile-hero-photo"><img src={GALLERY.exterior} alt="French-inspired Godrej Florenne residences" /></div>
+  <div className="mobile-hero-photo"><img src="/florenne-hero-background.webp" alt="Godrej Florenne approved reference image" /></div>
   <div className="mobile-hero-content">
    <p className="kicker">NEW LAUNCH · WHITEFIELD, BENGALURU</p>
    <h1>A touch of France.<br/><i>A whole lot of home.</i></h1>
