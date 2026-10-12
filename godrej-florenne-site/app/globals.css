@@ -48,3 +48,11 @@
 .hero-feature-strip .feature-icon{display:grid;place-items:center;flex:0 0 30px;width:30px;height:36px;color:#c99745;font-size:29px;font-family:Georgia,serif}
 .hero-actions-new .gold-btn span,.hero-actions-new .line-btn span{margin-left:10px;font-size:14px}
 @media(max-width:900px){.hero-feature-strip{grid-template-columns:repeat(2,minmax(0,1fr));padding:14px 18px}.hero-feature-strip>div{justify-content:flex-start;padding:12px 10px;border-right:0;border-bottom:1px solid #e6dfd4}.hero-feature-strip>div:last-child{grid-column:1/-1;border-bottom:0}.hero-feature-strip p{font-size:11px}}
+
+
+/* Use the uploaded full hero reference as-is; it already contains the navigation, headline, CTA and price card. */
+.site-nav{display:none!important}
+.hero-new{min-height:0!important;height:auto!important;aspect-ratio:1536/864;display:block!important}
+.hero-image{background-image:url('/florenne-hero-background.webp')!important;background-position:center center!important;background-size:100% 100%!important;transform:none!important}
+.hero-shade,.hero-copy-new,.hero-card,.hero-scroll{display:none!important}
+@media(max-width:760px){.hero-new{aspect-ratio:1536/864;min-height:0!important;height:auto!important}.hero-image{background-size:cover!important;background-position:center top!important}}
