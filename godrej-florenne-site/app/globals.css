@@ -101,3 +101,30 @@
   }
   .editorial{padding-top:56px!important}
 }
+
+
+/* Make the uploaded hero reference much taller and more readable on phones. */
+@media(max-width:760px){
+  .hero-new{
+    aspect-ratio:unset!important;
+    height:calc(100svh - 145px)!important;
+    min-height:480px!important;
+    max-height:760px!important;
+    width:100%!important;
+    overflow:hidden!important;
+  }
+  .hero-image{
+    background-size:cover!important;
+    background-position:center center!important;
+  }
+  .hero-actions-new{
+    left:7.5%!important;
+    bottom:6.5%!important;
+    gap:1.2vw!important;
+  }
+  .hero-actions-new a{
+    width:13.7vw!important;
+    height:5.2vw!important;
+    min-height:24px!important;
+  }
+}
