@@ -50,9 +50,14 @@
 @media(max-width:900px){.hero-feature-strip{grid-template-columns:repeat(2,minmax(0,1fr));padding:14px 18px}.hero-feature-strip>div{justify-content:flex-start;padding:12px 10px;border-right:0;border-bottom:1px solid #e6dfd4}.hero-feature-strip>div:last-child{grid-column:1/-1;border-bottom:0}.hero-feature-strip p{font-size:11px}}
 
 
-/* Use the uploaded full hero reference as-is; it already contains the navigation, headline, CTA and price card. */
+/* Use the uploaded reference image; add transparent, functional hotspots over its baked-in CTA buttons. */
 .site-nav{display:none!important}
 .hero-new{min-height:0!important;height:auto!important;aspect-ratio:1536/864;display:block!important}
 .hero-image{background-image:url('/florenne-hero-background.webp')!important;background-position:center center!important;background-size:100% 100%!important;transform:none!important}
-.hero-shade,.hero-copy-new,.hero-card,.hero-scroll{display:none!important}
-@media(max-width:760px){.hero-new{aspect-ratio:1536/864;min-height:0!important;height:auto!important}.hero-image{background-size:cover!important;background-position:center top!important}}
+.hero-shade,.hero-card,.hero-scroll{display:none!important}
+.hero-copy-new{display:block!important;position:absolute!important;inset:0!important;z-index:6!important;max-width:none!important;padding:0!important;pointer-events:none!important}
+.hero-copy-new>*:not(.hero-actions-new){display:none!important}
+.hero-actions-new{position:absolute!important;left:7.5%!important;bottom:6.5%!important;display:flex!important;gap:12px!important;pointer-events:auto!important}
+.hero-actions-new a{display:block!important;height:44px!important;width:190px!important;padding:0!important;margin:0!important;background:transparent!important;border:0!important;color:transparent!important;font-size:0!important;letter-spacing:0!important;box-shadow:none!important;overflow:hidden!important}
+.hero-actions-new a span{display:none!important}
+@media(max-width:760px){.hero-new{aspect-ratio:1536/864;min-height:0!important;height:auto!important}.hero-image{background-size:100% 100%!important;background-position:center center!important}.hero-actions-new{left:7.5%!important;bottom:6.5%!important;gap:7px!important}.hero-actions-new a{width:22vw!important;height:5.1vw!important;min-height:24px!important}}
