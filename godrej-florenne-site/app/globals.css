@@ -387,3 +387,26 @@
  .resource-cta .resource-icon,.resource-arrow{display:none!important}
  .thumb-play{width:42px;height:42px;font-size:18px}
 }
+
+
+/* Fix resource preview sizing: the legacy first-child icon rule must not shrink image thumbnails into circles. */
+.resource-cta > span.resource-thumb{
+  display:block!important;place-items:unset!important;
+  width:100%!important;height:152px!important;min-width:0!important;
+  flex:initial!important;flex-basis:auto!important;
+  border:0!important;border-radius:5px!important;
+  font-size:inherit!important;overflow:hidden!important;
+  background:#d9c7a6!important;
+}
+.resource-cta > span.resource-thumb img{
+  display:block!important;width:100%!important;height:100%!important;
+  min-width:100%!important;max-width:none!important;
+  object-fit:cover!important;border:0!important;border-radius:5px!important;
+}
+@media(max-width:760px){
+  .resource-cta > span.resource-thumb{
+    width:100%!important;height:112px!important;
+    grid-row:1!important;grid-column:1!important;
+    flex:none!important;border-radius:5px!important;
+  }
+}
