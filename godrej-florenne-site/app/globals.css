@@ -281,3 +281,25 @@
 @media screen and (max-width:760px){
   .desktop-image-hotspot{display:none!important}
 }
+
+
+/* Larger, clearer fixed contact buttons with recognizable symbols on laptop and mobile. */
+.floating-new{
+  left:20px!important;right:20px!important;bottom:16px!important;gap:12px!important;
+  z-index:9999!important;
+}
+.floating-new a{
+  min-height:60px!important;height:60px!important;padding:0 24px!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  gap:12px!important;font-size:16px!important;font-weight:600!important;
+  letter-spacing:.02em!important;border-radius:3px!important;
+  box-shadow:0 5px 18px rgba(0,0,0,.14)!important;
+}
+.floating-new a svg{display:block!important;width:23px!important;height:23px!important;flex:0 0 23px!important;fill:currentColor!important}
+.floating-new .floating-whatsapp{background:#24543f!important;color:#fff!important}
+.floating-new .floating-call{background:#c8aa73!important;color:#241e15!important}
+@media screen and (max-width:760px){
+  .floating-new{left:12px!important;right:12px!important;bottom:calc(8px + env(safe-area-inset-bottom))!important;gap:8px!important}
+  .floating-new a{height:56px!important;min-height:56px!important;padding:0 10px!important;gap:8px!important;font-size:14px!important}
+  .floating-new a svg{width:20px!important;height:20px!important;flex-basis:20px!important}
+}
