@@ -207,3 +207,12 @@
     transform-origin:center center!important;
   }
 }
+
+
+/* Fine-tune mobile hero zoom from 2.5% to 4.5% total, as requested. */
+@media screen and (max-width:760px){
+  main > section.mobile-hero .mobile-hero-photo img{
+    transform:scale(1.045)!important;
+    transform-origin:center center!important;
+  }
+}
