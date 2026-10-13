@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#123d2e"/><stop offset=".6" stop-color="#244b39"/><stop offset="1" stop-color="#0d2d23"/></linearGradient>
+ <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#172d25"/><stop offset=".55" stop-color="#e9dfca"/><stop offset="1" stop-color="#c4a66f"/></linearGradient>
+ <linearGradient id="photo" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7fa0b1"/><stop offset=".35" stop-color="#d9d1c0"/><stop offset="1" stop-color="#273e32"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#061b13" flood-opacity=".5"/></filter>
+</defs>
+<rect width="900" height="360" fill="url(#bg)"/>
+<g opacity=".22" fill="#c6b27e"><circle cx="80" cy="40" r="95"/><circle cx="870" cy="350" r="130"/></g>
+<!-- open luxury brochure -->
+<g filter="url(#shadow)" transform="translate(54 30) rotate(-5 340 150)">
+ <!-- back cover -->
+ <path d="M28 24 L260 6 L574 36 L594 278 L334 310 L44 286 Z" fill="#111e19"/>
+ <!-- front cover -->
+ <path d="M35 18 L260 0 L286 273 L54 292 Z" fill="#e7deca" stroke="#c8b68b" stroke-width="3"/>
+ <path d="M50 31 L245 15 L266 211 L65 230 Z" fill="url(#photo)"/>
+ <!-- french townhouse illustration -->
+ <g transform="translate(64 55)">
+  <rect x="16" y="28" width="150" height="120" fill="#e8dfcf"/>
+  <path d="M8 30 L91 -2 L175 30 Z" fill="#40556a"/>
+  <path d="M20 29 L90 5 L162 29" fill="none" stroke="#d6c4a4" stroke-width="5"/>
+  <g fill="#53677a" stroke="#f8e9ce" stroke-width="3"><rect x="29" y="45" width="25" height="34"/><rect x="72" y="43" width="27" height="36"/><rect x="117" y="45" width="25" height="34"/></g>
+  <g fill="#fff1cf"><rect x="29" y="93" width="25" height="42"/><rect x="72" y="91" width="27" height="44"/><rect x="117" y="93" width="25" height="42"/></g>
+  <path d="M15 88 H168 M10 143 H175" stroke="#c5b394" stroke-width="7"/>
+  <g fill="#173c2e"><circle cx="6" cy="130" r="14"/><circle cx="169" cy="127" r="16"/></g>
+ </g>
+ <text x="68" y="248" font-family="Georgia,serif" font-size="13" fill="#2a332b" letter-spacing="3">GODREJ</text>
+ <text x="68" y="269" font-family="Georgia,serif" font-size="22" fill="#1e2f27" letter-spacing="2">FLORENNE</text>
+ <!-- fold and open inside pages -->
+ <path d="M285 12 L430 24 L458 285 L310 271 Z" fill="#f5efe2" stroke="#c8bca6" stroke-width="2"/>
+ <path d="M430 24 L573 42 L592 273 L458 285 Z" fill="#fffaf0" stroke="#c8bca6" stroke-width="2"/>
+ <text x="318" y="48" font-family="Georgia,serif" font-size="10" fill="#967a4e" letter-spacing="1.5">RESIDENCE PLANS</text>
+ <g stroke="#b6a68b" stroke-width="2" fill="none">
+  <rect x="319" y="62" width="91" height="75"/><path d="M364 62 V137 M319 100 H410 M340 62 V87 H364 M388 100 V122 H410"/>
+  <rect x="320" y="150" width="90" height="83"/><path d="M350 150 V233 M380 150 V233 M320 190 H410 M350 210 H380"/>
+  <rect x="472" y="63" width="97" height="72"/><path d="M472 98 H569 M520 63 V135 M489 63 V84 H520"/>
+  <rect x="472" y="151" width="97" height="82"/><path d="M472 192 H569 M520 151 V233 M494 192 V215 H520"/>
+ </g>
+ <text x="320" y="253" font-family="Arial,sans-serif" font-size="9" fill="#88795e">4 BHK · 5 BHK</text>
+ <text x="474" y="253" font-family="Arial,sans-serif" font-size="9" fill="#88795e">AMENITIES</text>
+</g>
+<g transform="translate(645 105)">
+ <text x="0" y="0" font-family="Arial,sans-serif" font-size="17" fill="#d7c28e" letter-spacing="4">PROJECT BROCHURE</text>
+ <path d="M0 16 H190" stroke="#c4ab72" stroke-width="2"/>
+ <text x="0" y="65" font-family="Georgia,serif" font-size="32" fill="#fff8e9">Download</text>
+ <text x="0" y="103" font-family="Georgia,serif" font-size="32" fill="#fff8e9">Brochure</text>
+ <text x="0" y="139" font-family="Arial,sans-serif" font-size="16" fill="#d0d5ce">Request the project brochure</text>
+</g>
+<circle cx="820" cy="286" r="31" fill="#e8d7a9"/><path d="M811 267 H827 L837 277 V303 H811 Z M827 267 V277 H837 M816 285 H831 M816 292 H831" fill="none" stroke="#24392d" stroke-width="3"/>
+<path d="M853 286 H882 M872 275 L883 286 L872 297" fill="none" stroke="#f7f1e4" stroke-width="3"/>
+</svg>
