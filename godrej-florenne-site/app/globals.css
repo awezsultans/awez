@@ -346,3 +346,44 @@
   .resource-cta .resource-icon{width:50px;height:50px;flex-basis:50px}
   .resource-cta .resource-icon svg{width:26px;height:26px}
 }
+
+
+/* Image-led resource cards inspired by the approved Florenne visual reference. */
+.resource-actions{grid-template-columns:1fr!important;gap:14px!important;max-width:1240px!important}
+.resource-actions .resource-cta{
+  display:grid!important;grid-template-columns:minmax(180px,32%) minmax(0,1fr) 58px 24px!important;
+  align-items:center!important;gap:24px!important;min-height:178px!important;padding:12px 24px 12px 12px!important;
+  overflow:hidden!important;border:1px solid rgba(215,190,140,.24)!important;
+  border-radius:9px!important;background:#173f31!important;color:#fffdf8!important;
+}
+.resource-thumb{position:relative;display:block;width:100%;height:152px;overflow:hidden;border-radius:5px;background:#d9c7a6}
+.resource-thumb img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.resource-cta:hover .resource-thumb img{transform:scale(1.035)}
+.brochure-thumb img{object-position:center 56%}
+.video-thumb img{object-position:center 50%}
+.thumb-pdf{position:absolute;left:12px;bottom:10px;padding:4px 7px;border-radius:2px;background:#b52d26;color:white;font-size:10px;font-weight:800;letter-spacing:.08em}
+.thumb-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:rgba(255,253,248,.95);color:#111;font-size:23px;padding-left:3px;box-shadow:0 3px 12px rgba(0,0,0,.2)}
+.thumb-duration{position:absolute;right:9px;bottom:9px;padding:4px 7px;border-radius:3px;background:rgba(0,0,0,.75);color:white;font-size:10px;letter-spacing:.04em}
+.resource-copy{display:flex;flex-direction:column;gap:7px;min-width:0}
+.resource-copy .resource-eyebrow{font-size:11px!important;letter-spacing:.17em!important;color:#d7bb82!important;opacity:1!important}
+.resource-copy b{font-family:Georgia,serif!important;font-weight:500!important;font-size:clamp(21px,2.2vw,32px)!important;line-height:1.15!important;letter-spacing:-.025em!important}
+.resource-copy>small:last-child{font-size:15px!important;line-height:1.5!important;color:rgba(255,253,248,.76)!important;opacity:1!important}
+.resource-cta .resource-icon{width:58px!important;height:58px!important;flex-basis:58px!important;background:#e8d5aa!important;border:0!important;color:#111!important}
+.resource-cta .resource-icon svg{width:31px!important;height:31px!important;stroke:#111!important;stroke-width:2!important}
+.resource-cta .resource-icon .pdf-mark{display:none!important}
+.resource-arrow{font-size:30px;color:#fffdf8;line-height:1}
+.resource-cta:hover{background:#103629!important;transform:translateY(-1px)}
+@media(max-width:760px){
+ .resource-actions{padding:0 20px!important;gap:12px!important;margin:24px auto 0!important}
+ .resource-actions .resource-cta{
+   grid-template-columns:minmax(0,38%) minmax(0,1fr)!important;
+   grid-template-rows:auto!important;gap:12px!important;min-height:128px!important;padding:10px!important;
+ }
+ .resource-thumb{height:112px;grid-row:1;grid-column:1}
+ .resource-copy{grid-row:1;grid-column:2;gap:5px!important}
+ .resource-copy .resource-eyebrow{font-size:9px!important;letter-spacing:.1em!important}
+ .resource-copy b{font-size:18px!important;line-height:1.15!important}
+ .resource-copy>small:last-child{font-size:12px!important}
+ .resource-cta .resource-icon,.resource-arrow{display:none!important}
+ .thumb-play{width:42px;height:42px;font-size:18px}
+}
