@@ -259,3 +259,25 @@
     right:3%!important;top:1%!important;width:15%!important;height:10%!important;
   }
 }
+
+
+/* Desktop/laptop: invisible links over the two CTAs baked into the reference hero image. */
+.desktop-image-hotspot{display:none}
+@media screen and (min-width:761px){
+  main > section.hero-new{position:relative!important}
+  main > section.hero-new .desktop-image-hotspot{
+    display:block!important;position:absolute!important;z-index:20!important;
+    background:transparent!important;border:0!important;padding:0!important;margin:0!important;
+    min-height:0!important;text-decoration:none!important;cursor:pointer!important;
+    pointer-events:auto!important;
+  }
+  main > section.hero-new .desktop-request-hotspot{
+    left:10.5%!important;top:71.5%!important;width:23%!important;height:10.5%!important;
+  }
+  main > section.hero-new .desktop-explore-hotspot{
+    left:34%!important;top:71.5%!important;width:24%!important;height:10.5%!important;
+  }
+}
+@media screen and (max-width:760px){
+  .desktop-image-hotspot{display:none!important}
+}
