@@ -410,3 +410,25 @@
     flex:none!important;border-radius:5px!important;
   }
 }
+
+
+/* Refine the resource cards toward the approved reference: larger landscape previews. */
+@media(min-width:761px){
+  .resource-actions .resource-cta{
+    grid-template-columns:minmax(0,48%) minmax(0,1fr) 58px 24px!important;
+    gap:22px!important;
+    min-height:214px!important;
+    padding:12px 24px 12px 12px!important;
+  }
+  .resource-cta > span.resource-thumb{
+    height:188px!important;
+    border-radius:6px!important;
+  }
+  .resource-copy b{font-size:clamp(24px,2.2vw,34px)!important;line-height:1.12!important}
+  .resource-copy .resource-eyebrow{font-size:12px!important;letter-spacing:.16em!important}
+  .resource-copy>small:last-child{font-size:16px!important}
+}
+@media(max-width:760px){
+  .resource-actions .resource-cta{min-height:132px!important}
+  .resource-cta > span.resource-thumb{height:112px!important}
+}
