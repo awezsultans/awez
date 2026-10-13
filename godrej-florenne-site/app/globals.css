@@ -216,3 +216,23 @@
     transform-origin:center center!important;
   }
 }
+
+
+/* Ensure the baked-in Request Details and Explore Residences CTAs are clickable on mobile. */
+@media screen and (max-width:760px){
+  main > section.mobile-hero .mobile-image-hotspot{
+    pointer-events:auto!important;
+    cursor:pointer!important;
+    touch-action:manipulation!important;
+    -webkit-tap-highlight-color:rgba(197,163,108,.22)!important;
+  }
+  /* Compensate for the 4.5% centered image zoom so hit targets stay over the printed buttons. */
+  main > section.mobile-hero .mobile-request-hotspot{
+    left:4.1%!important;top:84.2%!important;width:14%!important;height:8.5%!important;
+  }
+  main > section.mobile-hero .mobile-explore-hotspot{
+    left:18.5%!important;top:84.2%!important;width:16.5%!important;height:8.5%!important;
+  }
+  #enquiry,#residences{scroll-margin-top:18px!important}
+  html{scroll-behavior:smooth}
+}
