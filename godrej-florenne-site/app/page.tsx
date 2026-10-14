@@ -48,6 +48,9 @@ export default function Home(){
  <div className="header-right"><span className="gp-mark">G</span><span>GODREJ<br/><b>PROPERTIES</b></span></div>
  <a className="nav-cta" href="#enquiry">ENQUIRE NOW</a>
 </header>
+ <nav className="mobile-section-nav" aria-label="Project navigation">
+  <a href="#story">OVERVIEW</a><a href="#highlights">HIGHLIGHTS</a><a href="#amenities">AMENITIES</a><a href="#location">LOCATION</a><a href="#gallery">GALLERY</a><a href="#enquiry">CONTACT US</a>
+ </nav>
  <section className="mobile-hero" aria-label="Godrej Florenne introduction">
   <div className="mobile-hero-photo">
    <img src="/a_luxurious_cinematic_ultra_realistic_architectu.png" alt="Godrej Florenne luxury row houses at golden hour" />
