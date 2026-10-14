@@ -50,7 +50,7 @@ export default function Home(){
 </header>
  <section className="mobile-hero" aria-label="Godrej Florenne introduction">
   <div className="mobile-hero-photo">
-   <img src="/florenne-mobile-hero.png" alt="Godrej Florenne luxury row houses at golden hour" />
+   <img src="/a_luxurious_cinematic_ultra_realistic_architectu.png" alt="Godrej Florenne luxury row houses at golden hour" />
    <a className="mobile-image-hotspot mobile-enquire-hotspot" href="#enquiry" aria-label="Enquire now"></a>
    <a className="mobile-image-hotspot mobile-request-hotspot" href="#enquiry" aria-label="Request details"></a>
    <a className="mobile-image-hotspot mobile-explore-hotspot" href="#residences" aria-label="Explore residences"></a>
