@@ -509,3 +509,13 @@
  .mobile-brand-enquire{display:inline-flex!important;align-items:center!important;justify-content:center!important;flex:0 0 auto!important;padding:10px 11px!important;background:#c9ad76!important;color:#17130c!important;text-decoration:none!important;font-size:9px!important;font-weight:800!important;letter-spacing:.04em!important;border-radius:2px!important}
 }
 @media screen and (min-width:761px){.mobile-brand-bar{display:none!important}}
+
+
+/* Mobile-only: place brochure and video cards immediately after the hero image. */
+.mobile-resource-actions{display:none}
+@media screen and (max-width:760px){
+ .mobile-resource-actions{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;padding:16px 16px 22px!important;background:#f5f0e6!important;box-sizing:border-box!important}
+ .mobile-resource-actions .resource-cta{width:100%!important;min-width:0!important}
+ #residences .resource-actions{display:none!important}
+}
+@media screen and (min-width:761px){.mobile-resource-actions{display:none!important}}
