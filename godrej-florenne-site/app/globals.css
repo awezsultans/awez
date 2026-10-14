@@ -466,8 +466,8 @@
 }
 
 
-/* Mobile-only: make the existing Florenne header image fill roughly half the phone viewport. Desktop/laptop remains unchanged. */
+/* Mobile-only: make the existing Florenne header image fill 90% of the phone viewport. Desktop/laptop remains unchanged. */
 @media(max-width:760px){
-  .hero-new{aspect-ratio:auto!important;height:50svh!important;min-height:360px!important;max-height:none!important;overflow:hidden!important;}
+  .hero-new{aspect-ratio:auto!important;height:90svh!important;height:90vh!important;min-height:500px!important;max-height:none!important;overflow:hidden!important;}
   .hero-image{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;background-size:100% 100%!important;background-position:center center!important;}
 }
