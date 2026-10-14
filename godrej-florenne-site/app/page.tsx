@@ -48,6 +48,12 @@ export default function Home(){
  <div className="header-right"><span className="gp-mark">G</span><span>GODREJ<br/><b>PROPERTIES</b></span></div>
  <a className="nav-cta" href="#enquiry">ENQUIRE NOW</a>
 </header>
+ <div className="mobile-brand-bar">
+  <a className="logo logo-reference" href="#top" aria-label="Godrej Florenne home">
+   <span className="godrej-wordmark">Godrej</span><span className="logo-divider" aria-hidden="true"></span><strong>FLORENNE</strong>
+  </a>
+  <a className="mobile-brand-enquire" href="#enquiry">ENQUIRE NOW</a>
+ </div>
  <nav className="mobile-section-nav" aria-label="Project navigation">
   <a href="#story">OVERVIEW</a><a href="#highlights">HIGHLIGHTS</a><a href="#amenities">AMENITIES</a><a href="#location">LOCATION</a><a href="#gallery">GALLERY</a><a href="#enquiry">CONTACT US</a>
  </nav>
