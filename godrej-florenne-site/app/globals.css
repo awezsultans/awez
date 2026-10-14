@@ -464,3 +464,10 @@
  .resource-modal{width:100%;max-height:calc(100dvh - 20px);padding:34px 22px 24px;border-radius:12px}
  .resource-modal h2{font-size:30px}
 }
+
+
+/* Mobile-only: enlarge the existing baked-in Florenne header image; leave all other sections unchanged. */
+@media(max-width:760px){
+  .hero-new{aspect-ratio:1/1!important;}
+  .hero-image{background-size:100% 100%!important;background-position:center center!important;}
+}
