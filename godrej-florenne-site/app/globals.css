@@ -496,3 +496,16 @@
   .mobile-section-nav a{display:inline-block!important;flex:0 0 auto!important;color:#fff!important;text-decoration:none!important;font-size:10px!important;font-weight:700!important;letter-spacing:.04em!important;line-height:1.4!important}
 }
 @media screen and (min-width:761px){.mobile-section-nav{display:none!important}}
+
+
+/* Mobile brand bar reuses the exact Godrej Florenne wordmark styles from desktop. */
+.mobile-brand-bar{display:none}
+@media screen and (max-width:760px){
+ .mobile-brand-bar{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;box-sizing:border-box!important;width:100%!important;min-height:58px!important;padding:10px 14px!important;background:#111!important;color:#fff!important}
+ .mobile-brand-bar .logo-reference{display:flex!important;align-items:center!important;gap:8px!important;text-decoration:none!important;flex:0 1 auto!important;min-width:0!important}
+ .mobile-brand-bar .logo-reference .godrej-wordmark{font-size:25px!important}
+ .mobile-brand-bar .logo-reference .logo-divider{height:25px!important}
+ .mobile-brand-bar .logo-reference strong{font-size:17px!important;letter-spacing:.025em!important}
+ .mobile-brand-enquire{display:inline-flex!important;align-items:center!important;justify-content:center!important;flex:0 0 auto!important;padding:10px 11px!important;background:#c9ad76!important;color:#17130c!important;text-decoration:none!important;font-size:9px!important;font-weight:800!important;letter-spacing:.04em!important;border-radius:2px!important}
+}
+@media screen and (min-width:761px){.mobile-brand-bar{display:none!important}}
