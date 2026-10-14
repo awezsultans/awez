@@ -466,8 +466,23 @@
 }
 
 
-/* Mobile-only: make the existing Florenne header image fill 90% of the phone viewport. Desktop/laptop remains unchanged. */
-@media(max-width:760px){
-  .hero-new{aspect-ratio:auto!important;height:90svh!important;height:90vh!important;min-height:500px!important;max-height:none!important;overflow:hidden!important;}
-  .hero-image{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;background-size:100% 100%!important;background-position:center center!important;}
+/* Correct target: the mobile page uses .mobile-hero-photo, not .hero-new. Set its header image to 90% viewport height on phones only. */
+@media screen and (max-width:760px){
+  main > section.mobile-hero .mobile-hero-photo{
+    width:100%!important;
+    height:90svh!important;
+    height:90vh!important;
+    min-height:0!important;
+    max-height:none!important;
+    aspect-ratio:auto!important;
+    overflow:hidden!important;
+  }
+  main > section.mobile-hero .mobile-hero-photo img{
+    position:absolute!important;
+    inset:0!important;
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+    object-position:center center!important;
+  }
 }
