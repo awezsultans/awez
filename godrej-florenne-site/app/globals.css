@@ -486,3 +486,13 @@
     object-position:center center!important;
   }
 }
+
+
+/* Mobile-only project navigation matching the laptop header; desktop remains unchanged. */
+.mobile-section-nav{display:none}
+@media screen and (max-width:760px){
+  .mobile-section-nav{display:flex!important;position:relative!important;z-index:30!important;width:100%!important;box-sizing:border-box!important;gap:20px!important;align-items:center!important;overflow-x:auto!important;white-space:nowrap!important;padding:14px 16px!important;background:#111!important;color:#fff!important;scrollbar-width:none!important;-webkit-overflow-scrolling:touch!important}
+  .mobile-section-nav::-webkit-scrollbar{display:none!important}
+  .mobile-section-nav a{display:inline-block!important;flex:0 0 auto!important;color:#fff!important;text-decoration:none!important;font-size:10px!important;font-weight:700!important;letter-spacing:.04em!important;line-height:1.4!important}
+}
+@media screen and (min-width:761px){.mobile-section-nav{display:none!important}}
