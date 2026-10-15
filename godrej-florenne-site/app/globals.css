@@ -580,3 +580,18 @@ body{min-width:0}
   .footer-new{grid-template-columns:minmax(0,1fr)}
   .footer-contact{flex-wrap:wrap}
 }
+
+/* Project FAQ: scoped styles, preserving existing responsive layout */
+.project-faq{background:#f6f2eb;color:#29251f;padding:82px max(25px,8vw);width:100%;box-sizing:border-box}
+.project-faq-inner{max-width:900px;margin:0 auto}
+.project-faq h2{font:500 clamp(30px,4.2vw,48px)/1.12 'Playfair Display',Georgia,serif;margin:0 0 18px;letter-spacing:-.025em}
+.project-faq-intro{max-width:720px;color:#655d52;line-height:1.75;margin:0 0 28px;font-size:15px}
+.project-faq-list{border-top:1px solid #d7cbbb}
+.project-faq-list details{border-bottom:1px solid #d7cbbb;padding:19px 0}
+.project-faq-list summary{cursor:pointer;list-style:none;font-size:16px;font-weight:600;padding-right:28px;position:relative}
+.project-faq-list summary::-webkit-details-marker{display:none}
+.project-faq-list summary:after{content:'+';position:absolute;right:3px;top:0;font-size:22px;font-weight:400;color:#8a7556}
+.project-faq-list details[open] summary:after{content:'−'}
+.project-faq-list details p{margin:13px 0 2px;color:#655d52;line-height:1.8;font-size:14px}
+.project-faq-list a{color:#725b36;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){.project-faq{padding:65px 25px}.project-faq summary{font-size:15px}}
