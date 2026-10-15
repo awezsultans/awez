@@ -1,11 +1,13 @@
 import type { MetadataRoute } from 'next';
 
+const siteUrl = 'https://godrej-florenne.gepropertyhub.com';
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://godrej-florenne-site.vercel.app/sitemap.xml',
+    sitemap: `${siteUrl}/sitemap.xml`,
   };
 }
