@@ -6,11 +6,11 @@ const siteUrl = 'https://godrej-florenne.gepropertyhub.com';
 export const metadata: Metadata = {
   title: 'Godrej Florenne Location | Whitefield, East Bengaluru',
   description: 'Explore the Godrej Florenne project location off Whitefield-Hoskote Road in East Bengaluru, with links to map directions and project enquiries.',
-  alternates: { canonical: '/location/' },
+  alternates: { canonical: '/location' },
   robots: { index: true, follow: true },
   openGraph: {
     type: 'website',
-    url: `${siteUrl}/location/`,
+    url: `${siteUrl}/location`,
     title: 'Godrej Florenne Location | Whitefield, East Bengaluru',
     description: 'Location information for Godrej Florenne near Whitefield-Hoskote Road, East Bengaluru.',
   },
@@ -28,7 +28,7 @@ export default function ProjectLocationPage() {
     <p><a href={mapUrl} target="_blank" rel="noopener noreferrer">Open location in Google Maps ↗</a></p>
     <h2>Plan a site visit</h2>
     <p>Before visiting, confirm the appointment, exact meeting point, available residence types and the latest project documents.</p>
-    <p><Link href="/#enquiry">Contact the project enquiry team</Link> · <Link href="/floor-plans/">Explore 4 and 5 BHK floor-plan information</Link> · <Link href="/">Return to project overview</Link></p>
+    <p><Link href="/#enquiry">Contact the project enquiry team</Link> · <Link href="/floor-plans">Explore 4 and 5 BHK floor-plan information</Link> · <Link href="/">Return to project overview</Link></p>
     <hr style={{border:0,borderTop:"1px solid #d4c7b4",margin:"36px 0"}}/>
     <p style={{fontSize:13,color:"#625d53"}}>This is a project-information page operated through GE Property Hub and is not the official Godrej Properties website. Confirm all details with the developer. Official source: <a href="https://www.godrejproperties.com/bengaluru/residential/godrej-florenne" target="_blank" rel="noopener noreferrer">Godrej Properties project page</a>.</p>
     <Link href="/">← Back to Godrej Florenne project information</Link>
