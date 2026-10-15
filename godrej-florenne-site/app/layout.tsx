@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
-const siteUrl = 'https://godrej-florenne-site.vercel.app';
+const siteUrl = 'https://godrej-florenne.gepropertyhub.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
