@@ -557,3 +557,26 @@
 
 /* Editorial story section: refined French-luxury typography and balanced image crop. */
 .editorial{grid-template-columns:48px minmax(0,.95fr) minmax(0,1.05fr)!important;align-items:stretch!important;min-height:650px!important;background:#f3eee4!important;color:#211f1a!important;gap:clamp(24px,4vw,64px)!important;padding-right:7vw!important}.editorial-label{padding:92px 0 0!important;color:#9a7844!important;font-size:9px!important;letter-spacing:.22em!important}.editorial-copy{padding:110px 0 90px!important;max-width:620px!important;align-self:center!important}.editorial-copy .editorial-kicker{font-size:10px!important;letter-spacing:.22em!important;text-transform:uppercase!important;color:#9a7844!important;margin:0 0 22px!important;font-weight:600!important}.editorial-copy h2{font:500 clamp(44px,4.5vw,68px)/1.04 'Playfair Display',serif!important;letter-spacing:-.035em!important;color:#22221d!important;margin:0 0 26px!important}.editorial-copy h2 i{font-weight:400!important;color:#8a6c42!important}.editorial-copy p{max-width:520px!important;font-size:15px!important;line-height:1.85!important;color:#6d685e!important}.editorial-copy .editorial-lead{font-size:17px!important;line-height:1.65!important;color:#39382f!important}.editorial-copy .text-arrow{margin-top:22px!important;color:#64502f!important;border-bottom-color:#b99b67!important;font-weight:600!important}.editorial-image{min-height:570px!important;height:100%!important;align-self:stretch!important;border:1px solid #c6a873!important;overflow:hidden!important}.editorial-image img{width:100%!important;height:100%!important;min-height:570px!important;object-fit:cover!important;object-position:center!important;display:block!important;transition:transform .6s ease!important}.editorial-image:hover img{transform:scale(1.025)!important}.editorial-image span{left:24px!important;bottom:24px!important;padding:10px 13px!important;background:#11110dcc!important;border:1px solid #c6a873!important;color:#f8edda!important;font-size:9px!important;letter-spacing:.17em!important}@media(max-width:900px){.editorial{grid-template-columns:1fr!important;gap:0!important;padding:0 6vw!important;min-height:unset!important}.editorial-label{writing-mode:initial!important;padding:45px 0 0!important}.editorial-copy{padding:34px 0 38px!important;max-width:700px!important}.editorial-copy h2{font-size:clamp(40px,8vw,58px)!important}.editorial-image{min-height:unset!important;height:clamp(300px,68vw,520px)!important;margin-bottom:42px!important}.editorial-image img{min-height:unset!important;height:100%!important}}@media(max-width:480px){.editorial{padding:0 22px!important}.editorial-copy{padding-top:28px!important}.editorial-image{height:320px!important}.editorial-copy .editorial-lead{font-size:16px!important}}
+
+
+/* Mobile viewport overflow fix: keep Florenne layout within the device width. */
+html,body{width:100%;max-width:100%;overflow-x:clip}
+body{min-width:0}
+@media(max-width:760px){
+  *,*::before,*::after{min-width:0}
+  .site-nav{width:100%;max-width:100%;left:0;right:0;box-sizing:border-box;gap:10px}
+  .logo{flex:1 1 auto;min-width:0;overflow:hidden}
+  .logo-reference strong{white-space:nowrap}
+  .nav-cta{flex:0 0 auto}
+  .hero-new,.editorial,.manifesto,.numbers,.residences,.amenity-section,.location-new,.closing,.enquiry-new,.footer-new{width:100%;max-width:100%;min-width:0;box-sizing:border-box}
+  .hero-image{inset:0;width:100%;max-width:100%;background-position:center center}
+  .hero-copy-new,.hero-card,.editorial-copy,.manifesto-copy,.section-heading,.location-copy,.enquiry-copy,.luxury-form{min-width:0;max-width:100%;box-sizing:border-box}
+  .residence-row{min-width:0}
+  .plan-visual{min-width:0;grid-template-columns:minmax(0,1fr)}
+  .amenity-section{grid-template-columns:minmax(0,1fr)!important}
+  .amenity-image,.location-map{width:100%;max-width:100%;min-width:0}
+  .connectivity{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .enquiry-new{grid-template-columns:minmax(0,1fr)}
+  .footer-new{grid-template-columns:minmax(0,1fr)}
+  .footer-contact{flex-wrap:wrap}
+}
