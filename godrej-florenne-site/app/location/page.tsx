@@ -26,6 +26,11 @@ export default function ProjectLocationPage() {
     <h2>Getting to the project</h2>
     <p>Whitefield is an established residential and employment area in East Bengaluru. Travel times vary with traffic and the route you choose, so check a live map before leaving and verify the site entrance with the sales representative.</p>
     <p><a href={mapUrl} target="_blank" rel="noopener noreferrer">Open location in Google Maps ↗</a></p>
+    <h2>Check the route and nearby access</h2>
+    <p>Whitefield and the surrounding parts of East Bengaluru include residential communities, workplaces and daily services, but the practical convenience of any address depends on your regular destinations. Check the route from the project to your office, school, healthcare providers and frequently used services at the times you normally travel.</p>
+    <p>Use a live navigation app for current traffic and road conditions rather than relying on a fixed travel-time estimate. Confirm the exact entrance, visitor parking arrangements and the meeting point with the project representative, because a map pin may not mark the sales office or site gate precisely.</p>
+    <h2>What to verify before visiting</h2>
+    <p>Ask for the current project address and a location pin from the sales team. Confirm your appointment, which residence or sample unit can be viewed, whether identification is needed, and who will meet you. If you are comparing projects, record your route, visit date and the documents provided so you can assess each option consistently.</p>
     <h2>Plan a site visit</h2>
     <p>Before visiting, confirm the appointment, exact meeting point, available residence types and the latest project documents.</p>
     <p><Link href="/#enquiry">Contact the project enquiry team</Link> · <Link href="/floor-plans">Explore 4 and 5 BHK floor-plan information</Link> · <Link href="/">Return to project overview</Link></p>
