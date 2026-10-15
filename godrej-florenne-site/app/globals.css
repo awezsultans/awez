@@ -537,3 +537,6 @@
 
 /* Alternate premium palette: muted French blue with champagne accents, highlights section only. */
 .manifesto{background:#e3eaf0!important;color:#243344!important}.manifesto-copy .kicker{color:#8a6c42!important}.manifesto-copy h2{color:#24384b!important}.manifesto-copy>p{color:#586675!important}.manifesto-points div{background:#f5f8fb!important;border:1px solid #c2d0dc!important;box-shadow:0 4px 14px rgba(39,57,76,.06)!important}.manifesto-points div:before{color:#a17d49!important}.manifesto-points b{color:#29445b!important}
+
+/* Stronger premium contrast for the Florenne feature cards. */
+.manifesto-points div{background:#173d35!important;border:1px solid #b99b67!important;box-shadow:0 5px 16px rgba(20,43,39,.13)!important;transition:background .2s ease,border-color .2s ease,transform .2s ease!important}.manifesto-points div:hover{background:#214f44!important;border-color:#d8bd88!important;transform:translateY(-2px)!important}.manifesto-points div:before{color:#e1c58c!important}.manifesto-points b{color:#fff8e9!important;font-weight:600!important}
