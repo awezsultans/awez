@@ -534,3 +534,6 @@
 
 /* Warmer, lighter premium palette for the highlights section only. */
 .manifesto{background:#e9e3d8!important;color:#292b27!important}.manifesto-copy .kicker{color:#8b7048!important}.manifesto-copy h2{color:#243b32!important}.manifesto-copy>p{color:#62665f!important}.manifesto-points div{background:#f7f4ee!important;border:1px solid #d6c7ad!important;box-shadow:0 3px 12px rgba(43,49,41,.045)!important}.manifesto-points div:before{color:#98784b!important}.manifesto-points b{color:#263d33!important}
+
+/* Alternate premium palette: muted French blue with champagne accents, highlights section only. */
+.manifesto{background:#e3eaf0!important;color:#243344!important}.manifesto-copy .kicker{color:#8a6c42!important}.manifesto-copy h2{color:#24384b!important}.manifesto-copy>p{color:#586675!important}.manifesto-points div{background:#f5f8fb!important;border:1px solid #c2d0dc!important;box-shadow:0 4px 14px rgba(39,57,76,.06)!important}.manifesto-points div:before{color:#a17d49!important}.manifesto-points b{color:#29445b!important}
