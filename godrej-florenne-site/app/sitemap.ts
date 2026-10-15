@@ -4,11 +4,8 @@ const siteUrl = 'https://godrej-florenne.gepropertyhub.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    {
-      url: siteUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
+    { url: siteUrl, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },
+    { url: `${siteUrl}/floor-plans/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${siteUrl}/location/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
   ];
 }
