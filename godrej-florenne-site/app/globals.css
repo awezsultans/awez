@@ -531,3 +531,6 @@
 /* Refined feature-card layout for the highlights directly beneath project resources. */
 @media(max-width:760px){.manifesto{margin:0 0 44px;grid-template-columns:1fr}.manifesto-image{min-height:0;height:270px}.manifesto-copy{padding:42px 22px 46px}.manifesto-copy h2{font-size:clamp(34px,9vw,44px)}.manifesto-points{grid-template-columns:1fr;gap:9px;margin-top:20px}.manifesto-points div{min-height:64px;padding:14px 14px 14px 40px}.manifesto-points div:last-child{grid-column:auto}.manifesto-points b{font-size:15px}}
 @media(min-width:761px) and (max-width:1050px){.manifesto{grid-template-columns:.7fr 1.3fr}.manifesto-copy{padding:55px 34px}.manifesto-points{gap:9px}.manifesto-points div{padding-left:38px}.manifesto-points div:before{left:13px}.manifesto-points b{font-size:14px}}
+
+/* Warmer, lighter premium palette for the highlights section only. */
+.manifesto{background:#e9e3d8!important;color:#292b27!important}.manifesto-copy .kicker{color:#8b7048!important}.manifesto-copy h2{color:#243b32!important}.manifesto-copy>p{color:#62665f!important}.manifesto-points div{background:#f7f4ee!important;border:1px solid #d6c7ad!important;box-shadow:0 3px 12px rgba(43,49,41,.045)!important}.manifesto-points div:before{color:#98784b!important}.manifesto-points b{color:#263d33!important}
